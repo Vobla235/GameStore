@@ -1,0 +1,392 @@
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    margin: 0;
+    background-image: url(imagesmain/bg.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.container1 {
+    padding-top: 50px;
+    margin: 0 147px;
+}
+
+.container {
+    z-index: 0;
+    margin: 0 147px;
+}
+
+.header-line {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgba(0, 0, 0, 0.596);
+    box-shadow: 0px 5px 5px hsla(0, 0%, 0%, 0.596);
+}
+
+.logo {
+    width: 250px;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 29px;
+    font-weight: 900;
+    margin-right: 25px;
+    transition: color 0.3s linear;
+}
+
+.nav-item:hover {
+    color: aqua;
+}
+
+.button-reg {
+    background-color: #24b63d;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 25px;
+    border-radius: 10px;
+    margin-right: 20px;
+    transition: background-color 0.2s linear;
+}
+
+.button-reg:hover {
+    background-color: #27a13b;
+}
+
+.button-enter {
+    background-color: #369fe0;
+    color: white;
+    text-decoration: none;
+    padding: 5px 47px;
+    font-size: 25px;
+    border-radius: 10px;
+    transition: background-color 0.2s linear;
+}
+
+.button-enter:hover {
+    background-color: #318fca;
+}
+
+.header-title {
+    color: white;
+    font-size: 53px;
+    font-weight: bold;
+    margin-top: 67px;
+}
+
+.header-title p {
+    text-shadow: 0px 4px 6px black;
+    margin: 0;
+}
+
+.header-desc {
+    text-align: left;
+    color: white;
+    font-size: 28px;
+    text-shadow: 0px 4px 6px black;
+}
+
+.header-button {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #23ab3a;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 10px;
+    border: 3px solid #3b6e26;
+    transition: background-color 0.2s linear;
+}
+
+.header-button:hover {
+    background-color: #47852d;
+}
+
+.content-holder {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clashofclans {
+    margin-top: 67px;
+    border: 4px solid #5125ad;
+    border-radius: 70px;
+    max-width: 800px;
+    width: 100%;
+    transition: box-shadow 0.1s linear;
+    transition: border-color 0.2s linear;
+}
+
+.clashofclans:hover {
+    border-color: #602dcc;
+    box-shadow: 0 0 20px #fff;
+}
+
+.game-title {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 0px 3px 4px black;
+}
+
+.game-item {
+    margin: 0 70px;
+    display: inline;
+}
+
+.game-img {
+    border-radius: 20px;
+    max-width: 250px;
+    width: 100%;
+}
+
+#one {
+    border: 3px solid #0c59cf;
+    transition: box-shadow 0.1s linear;
+    transition: border-color 0.2s linear;
+    max-height: 140.63px;
+}
+
+#one:hover {
+    border-color: #0e64e6;
+    box-shadow: 0 0 15px #fff;
+}
+
+#two {
+    border: 3px solid #00c8f8;
+    transition: box-shadow 0.1s linear;
+    transition: border-color 0.2s linear;
+    max-height: 140.63px;
+    height: 100%;
+}
+
+#two:hover {
+    border-color: #03cdff;
+    box-shadow: 0 0 15px #fff;
+}
+
+#three {
+    border: 3px solid #ff8351;
+    transition: box-shadow 0.1s linear;
+    transition: border-color 0.2s linear;
+    max-height: 140.63px;
+    height: 100%;
+}
+
+#three:hover {
+    border-color: #ff8757;
+    box-shadow: 0 0 15px #fff;
+}
+
+#four {
+    border: 3px solid #ffc957;
+    transition: box-shadow 0.1s linear;
+    transition: border-color 0.2s linear;
+    max-height: 140.63px;
+    height: 100%;
+}
+
+#four:hover {
+    border-color: #fac75b;
+    box-shadow: 0 0 15px #fff;
+}
+
+.game-subtitle {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    text-shadow: 0px 3px 4px black;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 1630px) {
+    .game-items {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 1630px) {
+    .game-items {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .game-item {
+        margin-left: auto;
+        margin-right: 30px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .content-holder {
+        text-align: center;
+        display: block;
+    }
+
+    .header-desc {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1350px) {
+    .header-line {
+        padding-bottom: 50px;
+    }
+
+    nav {
+        position: fixed;
+        top: 80px;
+        width: 100%;
+        user-select: none;
+        text-align: center;
+        padding-left: 20px;
+    }
+    .container1 {
+        margin: 0 80px;
+    }
+
+    .container {
+        margin: 0 80px;
+    }
+}
+
+@media (max-width: 657px) {
+    .header-line {
+        padding-bottom: 95px;
+    }
+
+    .button-enter {
+        padding: 5px 5px;
+    }
+
+    .button-reg {
+        margin-right: 10px;
+    }
+
+    .container1 {
+        margin: 0 40px;
+        padding-top: 100px;
+    }
+
+    .container {
+        margin: 0 40px;
+    }
+
+    .clashofclans {
+        margin-top: 27px;
+    }
+}
+
+@media (max-width: 520px) {
+    .header-line {
+        padding-bottom: 50px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    nav {
+        top: 70px;
+    }
+
+    .nav-item {
+        font-size: 15px;
+    }
+
+    .button-reg {
+        font-size: 15px;
+    }
+
+    .button-enter {
+        font-size: 15px;
+    }
+
+    .container1 {
+        padding-top: 30px;
+    }
+
+    .header-title {
+        font-size: 43px;
+        font-weight: bold;
+        margin-top: 67px;
+    }
+
+    .header-desc {
+        font-size: 22px;
+        text-shadow: 0px 4px 6px black;
+    }
+    .clashofclans {
+        border: 2px solid #5125ad;
+        border-radius: 50px;
+    }
+}
+@media (max-width: 407px) {
+    nav {
+        top: 60px;
+    }
+    .header-button {
+        font-size: 15px;
+        border: 1.5px solid #3b6e26;
+    }
+    .header-title {
+        font-size: 33px;
+    }
+    .header-desc {
+        font-size: 18px;
+    }
+    .button-reg {
+        margin-right: 5px;
+    }
+    .container1 {
+        padding-top: 40px;
+        margin: 0 20px;
+    }
+    .container {
+        margin: 0 20px;
+    }
+    .game-title {
+        font-size: 23px;
+    }
+    .game-img {
+        max-width: none;
+    }
+}
+@media (max-width: 365px) {
+    .button-reg {
+        border-radius: 10px;
+        font-size: 12px;
+    }
+    .button-enter {
+        border-radius: 10px;
+        font-size: 12px;
+    }
+    .header-line {
+        padding-top: 10px;
+    }
+    nav {
+        top: 45px;
+    }
+}
+
+/*до 301 всё нормально*/

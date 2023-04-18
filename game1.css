@@ -1,0 +1,615 @@
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    margin: 0;
+    background-image: url(imagesmain/bg.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.container1 {
+    padding-top: 50px;
+    margin: 0 147px;
+}
+
+.container {
+    z-index: 0;
+    margin: 0 147px;
+}
+
+.header-line {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgba(0, 0, 0, 0.596);
+    box-shadow: 0px 5px 5px hsla(0, 0%, 0%, 0.596);
+}
+.logo {
+    width: 250px;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 29px;
+    font-weight: 900;
+    margin-right: 25px;
+    transition: color 0.3s linear;
+}
+
+.nav-item:hover {
+    color: aqua;
+}
+
+.button-reg {
+    background-color: #23ab3a;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 25px;
+    border-radius: 10px;
+    margin-right: 20px;
+    transition: background-color 0.2s linear;
+}
+
+.button-reg:hover {
+    background-color: #47852d;
+}
+
+.button-enter {
+    background-color: #369fe0;
+    color: white;
+    text-decoration: none;
+    padding: 5px 47px;
+    font-size: 25px;
+    border-radius: 10px;
+    transition: background-color 0.2s linear;
+}
+
+.button-enter:hover {
+    background-color: #318fca;
+}
+
+.header-title {
+    color: white;
+    font-size: 53px;
+    font-weight: bold;
+    margin-top: 67px;
+}
+
+.header-title p {
+    text-shadow: 0px 4px 6px black;
+    margin: 0;
+}
+
+.header-desc {
+    text-align: left;
+    color: white;
+    font-size: 28px;
+    text-shadow: 0px 4px 6px black;
+}
+
+.header-button {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #58b632;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 10px;
+    border: 3px solid #3b6e26;
+    transition: background-color 0.2s linear;
+}
+
+.header-button:hover {
+    background-color: #47852d;
+}
+.container {
+    z-index: 0;
+    margin: 0 67px;
+}
+/*------------------------контент------------------------*/
+.content {
+    font-family: 'Source Sans 3', sans-serif;
+    color:#fff;
+    text-shadow: 0px 4px 6px black;
+    display: block;
+    margin-top: 125px;
+    width: 100%;
+    background-color: rgb(122, 122, 122, 0.4);
+    border: 1px solid black;
+    border-radius: 18px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+/*слайдер*/
+#slider { /*положение слайдера*/
+    width: auto;
+    text-align: center;
+}
+#slider {
+    margin-top: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#slides article{ /*все изображения справа друг от друга*/
+    width: 20%;
+    float: left;
+}
+#slides .image { /*устанавливает общий размер блока с изображениями*/
+    width: 500%;
+    line-height: 0;
+}
+#overflow { /*скрывает все, что находится за пределами этого блока*/
+    width: 100%;
+    overflow: hidden;
+}
+article img { /*размер изображений слайдера*/
+    width: 100%;
+    height: 50%;
+    border-radius: 18px;
+}
+article video {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+.controls {
+    width: 1000px;
+}
+#desktop:checked ~ #slider .table { /*размер всего слайдера*/
+    max-width: 2400px; /*максимальная длина*/
+} 
+.btnr { /*при наведении палец*/
+    cursor:pointer;
+}
+.all input { /*скрывает стандартные инпуты*/
+    display: none;
+}
+ /*позиция изображения при активации переключателя*/
+#switch1:checked ~ #slides .image {
+    margin-left: 0;
+}
+#switch2:checked ~ #slides .image {
+    margin-left: -100%;
+}
+#switch3:checked ~ #slides .image {
+    margin-left: -200%;
+}
+#switch4:checked ~ #slides .image {
+    margin-left: -300%;
+}
+#switch5:checked ~ #slides .image {
+    margin-left: -400%;
+}
+#controls { /*положение блока всех управляющих элементов*/
+    margin: -25% 0 0 0;
+    width: 100%;
+    height: 25px;
+}
+#active label { /*стиль отдельного переключателя*/
+    border-radius: 10px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #bbb;
+    margin-right: 20px;
+}
+#active { /*расположение блока с переключателями*/
+    margin: 25% 0 0;
+    text-align: center;
+}
+#active label:hover { /*поведение чекбокса при наведении*/
+    background: #76c8ff;
+    border-color: #777 !important; /*выполнение в любом случае*/
+}
+/*цвет активного лейбла при активации чекбокса*/
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3),
+#switch4:checked ~ #active label:nth-child(4),
+#switch5:checked ~ #active label:nth-child(5) {
+    background: #18a3dd;
+    border-color: #18a3dd !important;
+}
+#slides .image { /*анимация пролистывания изображения*/
+    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+#controls label:hover { /*прозрачность стрелок при наведении*/
+    opacity: 0.6;
+}
+#controls label { /*прозрачность стрелок при наведении*/
+    transition: opasity 0.2s ease-out;
+}
+.game-container {
+    margin: 0 40px;
+}
+.game {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.buy {
+    min-width: 287px;
+    max-width: 400px;
+}
+.gamedesc { /*описание игры и оценка*/
+    width: 50%;
+    padding: 0 20px;
+    min-height: 373px;
+    padding-top: 90px;
+}
+.gamedesc p {
+    margin:0;
+    padding:0; 
+}
+.dd {
+    width: 50%;
+    padding-top: 90px;
+}
+.buy-desc { /*инфа об игре*/
+    font-size: 1.7em;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 18px;
+    background-color: rgb(122, 122, 122, 0.6);
+}
+.buy-img { /*картинка*/
+    width: 100%;    
+    height: 200px;
+    border-radius: 18px;
+    box-shadow: 0px 5px 5px hsla(0, 0%, 0%, 0.596);
+    margin-bottom: 15px;
+}
+#buy-title { /*заголовок игры*/
+    position: static;
+    font-size: 3em;
+    line-height: 0;
+}
+.btnr { /*кнопки под лого*/
+    font-family: 'Source Sans 3', sans-serif;
+    color: white;
+    font-size: 25px;
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+#buy-btn {
+    font-size: 20px;
+    background-color: #23ab3a;
+    border: 1px solid #52ae61;
+    transition: background-color 0.2s linear;
+}
+#buy-btn:hover {
+    background-color: #209c35;
+    border: 1px solid #4da15b;
+}
+#plus-btn {
+    font-size: 20px;
+    border: 1px solid #4998b6;
+    background-color: #4ba0c0;
+    transition: background-color 0.2s linear;
+}
+#plus-btn:hover {
+    background-color: #438ca8;
+    border: 1px solid #4697b4;
+}
+.gamedesc1 { /*описание игры*/
+    width: 100%;
+    font-size: 1.5em;
+}
+.mark {
+    display: flex;
+    align-items: center;
+}
+.mark-star {
+    font-size: 1.7em;
+    margin-right: 10px;
+}
+.stars {
+    width: 50px;
+    margin-right: 5px;
+}
+.buy-desc a { /*х-ки игры*/
+    color: #fff;
+    text-decoration: none;
+}
+.buy-desc a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 1350px) {
+    .header-line {
+        padding-bottom: 50px;
+    }
+    .content {
+        margin-top: 150px;
+    }
+    nav {
+        position: fixed;
+        top: 80px;
+        width: 100%;
+        user-select: none;
+        text-align: center;
+        padding-left: 20px;
+    }
+}
+@media (max-width: 694px) {
+    .header-line {
+        padding-bottom: 95px;
+    }
+    .button-enter {
+        padding: 5px 5px;
+    }
+    .button-reg {
+        margin-right: 10px;
+    }
+    .content {
+        margin-top:200px;
+    }
+}
+@media (max-width: 1265px){
+    .game {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .buy {
+        width: 35%;
+    }
+    .gamedesc {
+        width: 55%;
+    }
+    .dd {
+        width: 100%;
+        padding-top: 0;
+    }
+    .game-container {
+        margin: 0 100px;
+    }
+}
+@media (max-width: 1061px){
+    .gamedesc {
+        width: 51%;
+    }
+    .dd {
+        width: 100%;
+        padding-top: 0;
+    }
+    .game-container {
+        margin: 0 100px;
+    }
+}
+@media (max-width: 1001px) {
+    .game {
+        justify-content:center;
+        
+    }
+    .gamedesc {
+        padding-top: 90px;
+        padding-bottom: 20px;
+    }
+    .mark {
+        justify-content: center;
+    }
+    .game-container {
+        margin: 0;
+    }
+    .buy-desc {
+        margin: 10px;
+    }
+    #slider {
+        margin-top: 15px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+@media (max-width: 801px) {
+    .container {
+        margin: 0 37px;
+    }
+    .game {
+        flex-direction: column;
+    }
+    .game-container {
+        margin: 0 10px;
+    }
+    #buy-title {
+        text-align: center;
+        font-size: 2.5em ;
+    }
+    .buy {
+        width: 100%;
+        max-width: none;
+    }
+    .gamedesc {
+        width: 100%;
+        padding-top: 20px;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        min-height: 1px;
+    }
+    #slider {
+        margin-top: 15px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    #active label { /*стиль отдельного переключателя*/
+        width: 10px;
+        height: 10px;
+        margin-right: 10px;
+    }
+    
+}
+@media (max-width: 365px) {
+    .button-reg {
+        border-radius: 10px;
+        font-size: 12px;
+    }
+    .button-enter {
+        border-radius: 10px;
+        font-size: 12px;
+    }
+    .header-line {
+        padding-top: 10px;
+    }
+    nav {
+        top: 45px;
+    }
+}
+@media (max-width: 530px) {
+    .header-line {
+        padding-bottom: 50px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    nav {
+        top: 70px;
+    }
+
+    .nav-item {
+        font-size: 15px;
+    }
+
+    .button-reg {
+        font-size: 15px;
+    }
+
+    .button-enter {
+        font-size: 15px;
+    }
+    .content {
+        margin-top:120px;
+    }
+    #slider {
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+@media (max-width: 445px) {
+    .mark {
+        margin-top: 10px;
+    }
+    .mark-star {
+        font-size: 1.5em;
+    }
+    .stars {
+        width: 35px;
+    }
+    .buy-desc {
+        margin: 0;
+    }
+    .gamedesc {
+        padding: 10px 0;
+    }
+    #active { /*расположение блока с переключателями*/
+        margin: 23% 0 0;
+    }
+}
+@media (max-width: 407px) {
+    nav {
+        top: 60px;
+    }
+    .header-button {
+        font-size: 15px;
+        border: 1.5px solid #3b6e26;
+    }
+    .header-title {
+        font-size: 33px;
+    }
+    .header-desc {
+        font-size: 18px;
+    }
+    .button-reg {
+        margin-right: 5px;
+    }
+    .container1 {
+        padding-top: 40px;
+        margin: 0 20px;
+    }
+    .container {
+        margin: 0 20px;
+    }
+    .game-title {
+        font-size: 23px;
+    }
+    .game-img {
+        max-width: none;
+    }
+ .content {
+     padding: 0;
+ }
+ .mark {
+     margin-bottom: 10px;
+ }
+}
+@media (max-width: 380px) {
+    .buy-desc {
+        font-size: 1.5em;
+    }
+    .buy-img {
+        height: 150px;
+        margin-bottom: 10px;
+    }
+    .btnr {
+        height: 40px;
+    }
+    #buy-title {
+        font-size: 2em;
+    }
+    #active { /*расположение блока с переключателями*/
+        margin: 20% 0 0;
+    }
+}
+@media (max-width: 365px) {
+    .button-reg {
+        border-radius: 10px;
+        font-size: 12px;
+    }
+    .button-enter {
+        border-radius: 10px;
+        font-size: 12px;
+    }
+    .header-line {
+        padding-top: 10px;
+    }
+    nav {
+        top: 45px;
+    }
+}
+@media (max-width: 350px) {
+    .buy {
+        min-width: 250px;
+    }
+    .mark-star {
+        font-size: 1.2em;
+    }
+    .stars {
+        width: 25px;
+    }
+    .buy-desc {
+        font-size: 1em;
+    }
+    .gamedesc {
+            font-size: 0.7em;
+    }
+    .btnr {
+        margin-bottom: 5px;
+    }
+}
